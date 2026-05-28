@@ -1,0 +1,46 @@
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.line {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 1px;
+}
+
+.burger.open .line {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .burger {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 6px;
+  }
+
+  .line {
+    width: 20px;
+    height: 2px;
+  }
+}

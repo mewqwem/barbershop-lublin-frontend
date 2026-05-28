@@ -1,0 +1,151 @@
+.header {
+  width: 100%;
+  background-color: color-mix(in oklab, #0a0a0a 95%, transparent);
+  border-bottom: 1px solid #3a3a3a;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  font-family: montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+
+  letter-spacing: var(--tracking-widest);
+
+  color: var(--color-white);
+
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}
+
+.navLink {
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+
+  color: var(--color-white);
+
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 2px;
+}
+
+.navLink:hover {
+  color: var(--color-white-hover);
+
+  border-bottom-color: var(--color-white-hover);
+}
+
+.navLink.active {
+  color: var(--color-white);
+
+  border-bottom-color: var(--popover);
+  font-weight: 500;
+}
+
+.spacer {
+  flex: 1;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .spacer {
+    display: block;
+  }
+}
+
+.cartWrapper {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.cartIcon {
+  width: 22px;
+  height: 22px;
+  color: #333333;
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background-color: #d97706;
+  color: #ffffff;
+  font-family: montserrat, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+    height: 64px;
+  }
+
+  .logo {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .cartIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .badge {
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    top: -2px;
+    right: -4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 900px) {
+  .ctaButton {
+    display: none;
+  }
+}
