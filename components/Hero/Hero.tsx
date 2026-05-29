@@ -1,14 +1,13 @@
-import React from "react";
 import css from "./Hero.module.css";
 import Image from "next/image";
 import { linkToBooksy } from "@/constants/linkToBooksy";
 import Link from "next/link";
-import { ImNewTab } from "react-icons/im";
 import ScrollButton from "../UI/ScrollButton/ScrollButton";
+import NewTabArrow from "../UI/NewTabArrow/NewTabArrow";
 
 export const Hero = () => {
   return (
-    <div className={css.heroSection}>
+    <section className={css.heroSection}>
       <div className={css.backgroundWrapper}>
         <Image
           src="/hero-background1.jpeg"
@@ -36,10 +35,10 @@ export const Hero = () => {
           rel="noopener noreferrer"
         >
           Zapisz się online
-          <ImNewTab className="arrow" />
+          <NewTabArrow />
         </Link>
         <ScrollButton />
       </div>
-    </div>
+    </section>
   );
 };

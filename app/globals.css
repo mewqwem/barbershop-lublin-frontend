@@ -13,13 +13,15 @@
   --color-white: #fff;
   --color-white-hover: #ffffff97;
 
+  --primary: #cccccc;
+  --primary-hover: rgba(229, 229, 229, 0.2);
+
   --background: var(--concrete-grey-dark);
   --foreground: var(--crisp-white);
   --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #030213;
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.95 0.0058 264.53);
   --secondary-foreground: #030213;
@@ -130,6 +132,10 @@ input {
 a {
   color: inherit;
   text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
 }
 
 @media (prefers-color-scheme: dark) {

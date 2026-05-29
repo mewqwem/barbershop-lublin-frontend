@@ -9,7 +9,7 @@ export const NavLinks = () => {
 
   const links = [
     { href: "/", label: "Główna" },
-    { href: "/uslugi", label: "Usługi" },
+    { href: "/services", label: "Usługi" },
     { href: "/zespol", label: "Zespół" },
     { href: "/galeria", label: "Galeria" },
     { href: "/blog", label: "Blog" },

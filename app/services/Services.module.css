@@ -1,0 +1,154 @@
+.servicesSection {
+  padding: 128px 0;
+  background-color: #222222;
+}
+
+.sectionTitle {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #ffffff;
+}
+@media only screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: 64px;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ensure the li element stretches to full height of grid cell */
+.item {
+  display: flex;
+}
+
+/* The clickable wrapper covering the entire card, matched with TopServices */
+.linkWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: 100%;
+  padding: 40px 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background-color: #0a0a0a;
+
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Premium platinum-silver hover glow */
+.linkWrapper:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(218, 218, 218, 0.15);
+}
+
+.cardTitle {
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.cardDescription {
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  font-size: 16px;
+  color: #b3b3b3;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.priceWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 16px;
+  margin-top: auto; /* Pushes the price block to the very bottom */
+}
+
+/* Silver accent price */
+.price {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 24px; /* Increased to match TopServices price size */
+  color: var(--primary);
+}
+
+/* Styled duration text to match visual hierarchy */
+.duration {
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  font-size: 14px;
+  color: #888888;
+  transition: color 0.3s ease;
+}
+
+/* Subtle detail: duration lights up slightly on card hover */
+.linkWrapper:hover .duration {
+  color: #b3b3b3;
+}
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  transition: border-color 0.3s ease;
+}
+.image {
+  object-fit: cover;
+  object-position: center;
+
+  filter: grayscale(0%) brightness(1);
+
+  transition:
+    transform 0.5s ease,
+    filter 0.3s ease;
+}
+
+@media (hover: hover) {
+  .linkWrapper .image {
+    filter: grayscale(20%) brightness(0.8);
+  }
+
+  .linkWrapper:hover .image {
+    filter: grayscale(0%) brightness(1);
+    transform: scale(1.05);
+  }
+}

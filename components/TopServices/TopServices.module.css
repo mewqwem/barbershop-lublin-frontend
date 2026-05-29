@@ -1,0 +1,167 @@
+/* TopServices.module.css */
+.servicesSection {
+  padding: 128px 0;
+  background-color: #222222;
+}
+
+.sectionTitle {
+  font-family: var(--font-montserrat);
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #ffffff;
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 20px;
+  list-style: none;
+  margin: 0 0 64px 0;
+}
+
+/* Responsive layout for tablet and desktop */
+@media (min-width: 768px) {
+  .servicesContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.serviceCard {
+  position: relative;
+  display: flex;
+}
+
+/* The clickable wrapper covering the entire card */
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 40px 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background-color: #0a0a0a;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cardLink:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(218, 218, 218, 0.15);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.serviceTitle {
+  font-family: var(--font-montserrat);
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.cardLink:hover .iconWrapper {
+  background-color: var(--primary-hover);
+}
+
+.icon {
+  font-size: 48px; /* Standard sizes inside a 100px circle */
+  color: #d7d7d7;
+  transition: color 0.3s ease;
+}
+
+.cardLink:hover .icon {
+  color: var(--primary);
+}
+
+.servicePrice {
+  font-family: var(--font-montserrat);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: auto;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.viewAllLink {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 1px solid #c0c0c0;
+  color: #c0c0c0;
+  background-color: transparent;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewAllLink:hover {
+  background-color: var(--primary);
+  color: #000000;
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(218, 218, 218, 0.15);
+}
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  transition: border-color 0.3s ease;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+
+  filter: grayscale(20%) brightness(0.8);
+
+  transition:
+    transform 0.5s ease,
+    filter 0.3s ease;
+}
+
+.cardLink:hover .image {
+  filter: grayscale(0%) brightness(1);
+}

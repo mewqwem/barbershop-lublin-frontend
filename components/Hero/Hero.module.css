@@ -107,7 +107,7 @@
     font-size: 28px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.98px) {
   .title {
     font-size: 65px;
   }
