@@ -213,3 +213,17 @@ ol {
     padding: 0 32px;
   }
 }
+.sectionTitle {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  color: #ffffff;
+
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: 64px;
+  }
+}

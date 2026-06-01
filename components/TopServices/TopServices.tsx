@@ -7,7 +7,7 @@ const TopServices = () => {
   return (
     <section className={css.servicesSection}>
       <div className="container">
-        <h2 className={css.sectionTitle}>Top Usługi</h2>
+        <h2 className="sectionTitle">Top Usługi</h2>
 
         <ul className={css.list}>
           {services.slice(0, 3).map((service) => (

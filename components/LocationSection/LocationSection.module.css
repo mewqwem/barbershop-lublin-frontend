@@ -1,0 +1,115 @@
+.section {
+  padding: 128px 0;
+  background-color: #222222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+/* Info side styles layout */
+.infoSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #666666;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 16px 0;
+}
+
+.address {
+  font-size: 18px;
+  color: #e5e5e5;
+  margin: 0 0 24px 0;
+  font-weight: 500;
+}
+
+/* Styled container for extra tips */
+.guideBox {
+  background-color: #141414;
+  border-left: 3px solid #c0c0c0; /* Subtle silver accent border line */
+  border-radius: 0 8px 8px 0;
+  padding: 16px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.guideText {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a3a3a3;
+  margin: 0;
+}
+
+.guideText strong {
+  color: #ffffff;
+}
+
+/* Link navigation transition layer */
+.pageLink {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.pageLink:hover {
+  color: #c0c0c0;
+}
+
+/* Map side styles layout */
+.mapSide {
+  flex: 1.2;
+  width: 100%;
+  height: 350px; /* Base height for mobile layout screens */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(192, 192, 192, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .mapSide {
+    height: 450px;
+  }
+}
+
+.mapIframe {
+  width: 100%;
+  height: 100%;
+  /* Optional: slightly desaturates the map colors to blend better with dark templates */
+  filter: grayscale(0.3) invert(0.9) hue-rotate(180deg);
+}

@@ -1,0 +1,160 @@
+.contactsSection {
+  padding: 128px 0;
+  background-color: #222222;
+}
+
+.mainTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.sectionDescription {
+  font-family: var(--font-open-sans);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #b7b7b7;
+}
+@media only screen and (min-width: 768px) {
+  .sectionDescription {
+    font-size: 22px;
+  }
+}
+
+/* Three-column configuration breakdown for modern layouts */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual modern card layout components */
+.card {
+  background-color: #141414;
+  border: 1px solid rgba(192, 192, 192, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.1);
+  padding-bottom: 12px;
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666666;
+  letter-spacing: 1px;
+}
+
+.value {
+  font-size: 15px;
+  color: #e5e5e5;
+}
+
+.subValue {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #8a8a8a;
+}
+
+.valueLink {
+  font-size: 15px;
+  color: #e5e5e5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  width: fit-content;
+}
+
+.valueLink:hover {
+  color: #ffffff;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+}
+
+/* Bottom CTA block layout module */
+.ctaBlock {
+  background: linear-gradient(135deg, #141414 0%, #1a1a1a 100%);
+  border: 1px solid rgba(192, 192, 192, 0.15);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.ctaTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.ctaText {
+  font-size: 15px;
+  max-width: 500px;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #ffffff;
+  color: #0b0b0b;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #e5e5e5;
+  transform: translateY(-2px);
+}

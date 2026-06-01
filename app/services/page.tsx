@@ -6,7 +6,7 @@ const page = () => {
   return (
     <section className={css.servicesSection}>
       <div className="container">
-        <h2 className={css.sectionTitle}>Wszystkie Usługi</h2>
+        <h2 className="sectionTitle">Wszystkie Usługi</h2>
         <h3 className={css.sectionDescription}>
           Profesjonalna pielęgnacja męska na najwyższym poziomie. Każda usługa
           wykonywana z dbałością o szczegóły.

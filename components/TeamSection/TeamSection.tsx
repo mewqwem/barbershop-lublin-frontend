@@ -7,7 +7,7 @@ const TeamSection = () => {
   return (
     <section className={css.teamSection}>
       <div className="container">
-        <h2 className={css.sectionTitle}>Poznaj naszych mistrzów</h2>
+        <h2 className="sectionTitle">Poznaj naszych mistrzów</h2>
         <h3></h3>
         <ul className={css.teamList}>
           {teamMembers.map((i) => (

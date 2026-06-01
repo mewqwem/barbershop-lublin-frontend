@@ -14,10 +14,11 @@ interface MobileNavProps {
 }
 
 const links = [
-  { href: "/", label: "Home" },
-  // { href: "/shop", label: "Shop" },
-  { href: "/booking", label: "Booking" },
-  { href: "/contacts", label: "Contacts" },
+  { href: "/", label: "Główna" },
+  { href: "/services", label: "Usługi" },
+  { href: "/team", label: "Zespół" },
+  { href: "/gallery", label: "Galeria" },
+  { href: "/contacts", label: "Kontakt" },
 ];
 
 export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {

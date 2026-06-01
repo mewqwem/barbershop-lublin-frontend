@@ -2,20 +2,7 @@
   background-color: #2a2a2a;
   padding: 128px 0;
 }
-.sectionTitle {
-  font-family: var(--font-montserrat);
-  font-weight: 600;
-  font-size: 48px;
-  text-align: center;
-  color: #ffffff;
 
-  margin-bottom: 48px;
-}
-@media only screen and (min-width: 768px) {
-  .sectionTitle {
-    font-size: 64px;
-  }
-}
 .teamList {
   display: flex;
   flex-direction: row;

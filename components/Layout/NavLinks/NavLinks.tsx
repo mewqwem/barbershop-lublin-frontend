@@ -11,9 +11,8 @@ export const NavLinks = () => {
     { href: "/", label: "Główna" },
     { href: "/services", label: "Usługi" },
     { href: "/team", label: "Zespół" },
-    { href: "/galeria", label: "Galeria" },
-    { href: "/blog", label: "Blog" },
-    { href: "/kontakt", label: "Kontakt" },
+    { href: "/gallery", label: "Galeria" },
+    { href: "/contacts", label: "Kontakt" },
   ];
 
   return (
