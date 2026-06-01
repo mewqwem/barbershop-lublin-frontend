@@ -21,7 +21,7 @@ const NotFound = () => {
             <span>Strona główna</span>
           </Link>
 
-          <Link href="/uslugi" className={`${css.btn} ${css.secondaryBtn}`}>
+          <Link href="/services" className={`${css.btn} ${css.secondaryBtn}`}>
             <span>Nasze usługi</span>
           </Link>
         </div>

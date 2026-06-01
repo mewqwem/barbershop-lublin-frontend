@@ -8,12 +8,24 @@
   font-weight: 600;
   font-size: 48px;
   text-align: center;
-  margin-bottom: 48px;
   color: #ffffff;
 }
 @media only screen and (min-width: 768px) {
   .sectionTitle {
     font-size: 64px;
+  }
+}
+.sectionDescription {
+  font-family: var(--font-open-sans);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #b7b7b7;
+}
+@media only screen and (min-width: 768px) {
+  .sectionDescription {
+    font-size: 22px;
   }
 }
 

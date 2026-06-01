@@ -1,4 +1,6 @@
-export const services = [
+import { Service } from "@/types/services";
+
+export const services: Service[] = [
   {
     name: "Strzyżenie męskie",
     price: "80 zł",

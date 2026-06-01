@@ -10,7 +10,7 @@ export const NavLinks = () => {
   const links = [
     { href: "/", label: "Główna" },
     { href: "/services", label: "Usługi" },
-    { href: "/zespol", label: "Zespół" },
+    { href: "/team", label: "Zespół" },
     { href: "/galeria", label: "Galeria" },
     { href: "/blog", label: "Blog" },
     { href: "/kontakt", label: "Kontakt" },
