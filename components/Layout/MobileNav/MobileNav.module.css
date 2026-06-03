@@ -51,7 +51,7 @@
 .menuTitle {
   margin: 0;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.5px;
   color: var(--crisp-white);
   font-family: var(--font-montserrat), sans-serif;
@@ -113,7 +113,7 @@
 .navLink.active {
   color: var(--crisp-white);
   background-color: var(--concrete-grey);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .cartLink {
@@ -125,7 +125,7 @@
   color: var(--color-white);
   text-decoration: none;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   border-top: 1px solid var(--concrete-grey);
   transition: background-color 0.2s ease-in-out;
   margin-top: auto;
@@ -205,4 +205,14 @@
 .bookLink:hover,
 .bookLink:active {
   background-color: #6d1717;
+}
+
+/* Оптимізація: замість зміни style через JS, використовуємо глобальний клас */
+/* Це батчується браузером для запобігання forced reflow */
+:global(html.mobile-nav-open) {
+  overflow: hidden;
+}
+
+:global(body.mobile-nav-open) {
+  overflow: hidden;
 }

@@ -3,10 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { IoClose } from "react-icons/io5";
 import css from "./MobileNav.module.css";
 import { linkToBooksy } from "@/constants/linkToBooksy";
-import { ImNewTab } from "react-icons/im";
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -24,17 +22,20 @@ const links = [
 export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
   const pathname = usePathname();
   useEffect(() => {
+    // Батчувати зміни DOM в requestAnimationFrame для оптимізації
+    // та уникнення forced reflow при анімаціях
     if (isOpen) {
-      document.documentElement.style.overflow = "hidden";
-      document.body.style.overflow = "hidden";
+      requestAnimationFrame(() => {
+        document.documentElement.classList.add("mobile-nav-open");
+      });
     } else {
-      document.documentElement.style.overflow = "unset";
-      document.body.style.overflow = "unset";
+      requestAnimationFrame(() => {
+        document.documentElement.classList.remove("mobile-nav-open");
+      });
     }
 
     return () => {
-      document.documentElement.style.overflow = "unset";
-      document.body.style.overflow = "unset";
+      document.documentElement.classList.remove("mobile-nav-open");
     };
   }, [isOpen]);
 
@@ -50,7 +51,7 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
             onClick={onClose}
             aria-label="Close menu"
           >
-            <IoClose size={28} />
+            Close
           </button>
         </div>
 
@@ -79,7 +80,6 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
             rel="noopener noreferrer"
           >
             Zarezerwuj wizytę
-            <ImNewTab className="arrow" />
           </Link>
         </div>
       </nav>

@@ -6,14 +6,14 @@ import { Footer } from "@/components/Layout/Footer/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "600", "700"],
   variable: "--font-montserrat",
   display: "swap",
 });
 
 const openSans = Open_Sans({
   subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["400", "600", "700"],
   variable: "--font-open-sans",
   display: "swap",
 });

@@ -66,7 +66,7 @@
   color: var(--color-white);
   letter-spacing: 0.1em;
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .subtitle {
@@ -75,7 +75,7 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .description {
@@ -124,7 +124,7 @@
   letter-spacing: 0.025em;
   transition: all 0.3s ease;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   border-radius: var(--radius);
   cursor: pointer;

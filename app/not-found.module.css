@@ -38,7 +38,7 @@
   color: var(--color-white);
   letter-spacing: 0.1em;
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 
   text-align: center;
 }
@@ -75,7 +75,7 @@
   letter-spacing: 0.025em;
   transition: all 0.3s ease;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   border-radius: var(--radius);
   cursor: pointer;
@@ -118,7 +118,7 @@
   padding: 1rem 2rem;
   transition: all 0.3s ease;
   min-width: 200px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 

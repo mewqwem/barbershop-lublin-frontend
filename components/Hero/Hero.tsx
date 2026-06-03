@@ -3,7 +3,6 @@ import Image from "next/image";
 import { linkToBooksy } from "@/constants/linkToBooksy";
 import Link from "next/link";
 import ScrollButton from "../UI/ScrollButton/ScrollButton";
-import NewTabArrow from "../UI/NewTabArrow/NewTabArrow";
 
 export const Hero = () => {
   return (
@@ -15,6 +14,7 @@ export const Hero = () => {
           className={css.backgroundImage}
           fill
           loading="eager"
+          fetchPriority="high"
         />
         <div className={css.overlay} />
       </div>
@@ -35,7 +35,6 @@ export const Hero = () => {
           rel="noopener noreferrer"
         >
           Zapisz się online
-          <NewTabArrow />
         </Link>
         <ScrollButton />
       </div>

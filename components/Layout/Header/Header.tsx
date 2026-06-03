@@ -6,9 +6,7 @@ import { NavLinks } from "../NavLinks/NavLinks";
 import { MobileNav } from "../MobileNav/MobileNav";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 import { useState } from "react";
-import { ImNewTab } from "react-icons/im";
 import { linkToBooksy } from "@/constants/linkToBooksy";
-import NewTabArrow from "@/components/UI/NewTabArrow/NewTabArrow";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +28,6 @@ export const Header = () => {
           rel="noopener noreferrer"
         >
           Umów wizytę
-          <NewTabArrow />
         </Link>
         <BurgerMenu
           isOpen={isMenuOpen}

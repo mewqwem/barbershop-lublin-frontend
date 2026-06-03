@@ -1,9 +1,7 @@
 import Image from "next/image";
 import css from "./TeamCardFull.module.css";
 import { Team } from "@/types/team";
-import { PiMedalFill } from "react-icons/pi";
 import Link from "next/link";
-import { IoLogoInstagram } from "react-icons/io5";
 
 interface TeamCardFullProps {
   teamMember: Team;
@@ -22,9 +20,7 @@ const TeamCardFull = ({ teamMember }: TeamCardFullProps) => {
         ></Image>
       </div>
       <div className={css.contentWrapper}>
-        <p className={css.experience}>
-          <PiMedalFill /> {teamMember.experience}
-        </p>
+        <p className={css.experience}>{teamMember.experience}</p>
         <h3 className={css.title}>{teamMember.name}</h3>
         <p className={css.text}>{teamMember.position}</p>
         <div className={css.specialtyWrapper}>
@@ -37,7 +33,7 @@ const TeamCardFull = ({ teamMember }: TeamCardFullProps) => {
           target="_blank"
           rel="noopener nooferer"
         >
-          <IoLogoInstagram />@{teamMember.socialMedia}
+          @{teamMember.socialMedia}
         </Link>
       </div>
     </li>

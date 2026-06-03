@@ -5,7 +5,7 @@
 
 .sectionTitle {
   font-family: var(--font-montserrat);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 48px;
   text-align: center;
   color: #ffffff;
@@ -94,7 +94,7 @@
 
 .cardDescription {
   font-family: var(--font-open-sans);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   color: #b3b3b3;
   line-height: 1.6;
@@ -113,7 +113,7 @@
 /* Silver accent price */
 .price {
   font-family: var(--font-montserrat);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px; /* Increased to match TopServices price size */
   color: var(--primary);
 }
@@ -121,7 +121,7 @@
 /* Styled duration text to match visual hierarchy */
 .duration {
   font-family: var(--font-open-sans);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   color: #888888;
   transition: color 0.3s ease;

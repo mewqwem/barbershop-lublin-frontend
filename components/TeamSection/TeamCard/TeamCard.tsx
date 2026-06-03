@@ -2,7 +2,6 @@ import Image from "next/image";
 import css from "./TeamCard.module.css";
 import { Team } from "@/types/team";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 
 interface TeamCardProps {
   teamMember: Team;
@@ -24,7 +23,7 @@ const TeamCard = ({ teamMember }: TeamCardProps) => {
         <h3 className={css.title}>{teamMember.name}</h3>
         <p className={css.text}>{teamMember.position}</p>
         <Link className={css.link} href={"/team"}>
-          Pelny profile <FaArrowRight />
+          Pelny profile
         </Link>
       </div>
     </li>
