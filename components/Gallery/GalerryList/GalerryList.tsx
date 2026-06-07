@@ -1,10 +1,21 @@
 "use client";
 import React, { useState } from "react";
+import Masonry from "react-masonry-css";
 import css from "./GalerryList.module.css";
 import { images } from "@/constants/galleryData";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+
+const breakpointColumnsObj = {
+  default: 5,
+  1200: 4,
+  900: 3,
+  600: 2,
+  400: 1,
+};
+
+const sizeClasses = ["tall", "short", "medium", "xshort", "xlong", "short"];
 
 const GalerryList = () => {
   const placeholderImage = "/placeholderImage.jpg";
@@ -21,26 +32,36 @@ const GalerryList = () => {
     src: failedImages.has(imageIndex) ? placeholderImage : image.url,
     alt: image.alt,
   }));
+
   return (
     <>
-      <ul className={css.list}>
-        {images.map((image, i) => (
-          <li key={image.id}>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className={css.grid}
+        columnClassName={css.column}
+      >
+        {images.map((image, i) => {
+          const sizeClass = sizeClasses[i % sizeClasses.length];
+          return (
             <div
-              className={css.imageWrapper}
+              key={image.id}
+              className={css.gridItem}
               onClick={() => handleImageClick(i)}
             >
-              <Image
-                className={css.image}
-                src={image.url}
-                alt={image.alt}
-                fill
-                unoptimized
-              ></Image>
+              <div className={`${css.imageWrapper} ${css[sizeClass]}`}>
+                <Image
+                  className={css.image}
+                  src={image.url}
+                  alt={image.alt}
+                  fill
+                  sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, (max-width: 1200px) 30vw, 18vw"
+                  unoptimized
+                />
+              </div>
             </div>
-          </li>
-        ))}
-      </ul>
+          );
+        })}
+      </Masonry>
       <Lightbox
         open={isOpen}
         close={() => setIsOpen(false)}

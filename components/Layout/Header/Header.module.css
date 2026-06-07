@@ -1,13 +1,17 @@
 .header {
   width: 100%;
-  background-color: color-mix(in oklab, #0a0a0a 95%, transparent);
+  background-color: color-mix(in oklab, #0a0a0a98 95%, transparent);
   border-bottom: 1px solid #3a3a3a;
   box-sizing: border-box;
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
@@ -16,6 +20,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+
+  backdrop-filter: blur(12px);
 }
 
 .logo {

@@ -1,26 +1,45 @@
 import Link from "next/link";
 import css from "./TopServices.module.css";
-import { services } from "@/constants/services";
-import ServiceCard from "../ServiceCard/ServiceCard";
+import { POPULAR_OFFERS } from "@/constants/services";
 
 const TopServices = () => {
   return (
     <section className={css.servicesSection}>
       <div className="container">
         <h2 className="sectionTitle">Top Usługi</h2>
-
-        <ul className={css.list}>
-          {services.slice(0, 3).map((service) => (
-            <ServiceCard
-              key={service.name}
-              service={service}
-              topService={true}
-            />
+        <div className={css.popularGrid}>
+          {POPULAR_OFFERS.map((offer) => (
+            <div key={offer.id} className={css.popularCard}>
+              {offer.isMostChosen && (
+                <span className={css.cardBadge}>MOST CHOSEN</span>
+              )}
+              <div className={css.cardTop}>
+                <h3 className={css.cardTitle}>{offer.title}</h3>
+                <p className={css.cardDesc}>{offer.description}</p>
+              </div>
+              <div className={css.cardFooter}>
+                <div className={css.cardPriceSection}>
+                  <span className={css.cardDuration}>
+                    DURATION: {offer.duration}
+                  </span>
+                  <span className={css.cardPrice}>{offer.price}</span>
+                </div>
+                <Link
+                  href="youbarber56.booksy.com/c"
+                  className={css.cardBtn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  BOOK
+                </Link>
+              </div>
+            </div>
           ))}
-        </ul>
-        <div className={css.buttonWrapper}>
-          <Link href="/services" className={css.viewAllLink}>
-            Zobacz wszystkie
+        </div>
+
+        <div className={css.contentWrapper}>
+          <Link href="/services" className={css.ctaButton}>
+            Zobacz wszystkie usługi
           </Link>
         </div>
       </div>

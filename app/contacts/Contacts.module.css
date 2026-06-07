@@ -1,8 +1,12 @@
 .contactsSection {
-  padding: 128px 0;
+  padding: 64px 0;
   background-color: #222222;
 }
-
+@media only screen and (min-width: 768px) {
+  .contactsSection {
+    padding: 128px 0;
+  }
+}
 .mainTitle {
   font-family: var(--font-montserrat), sans-serif;
   font-size: 36px;

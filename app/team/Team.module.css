@@ -1,6 +1,11 @@
 .servicesSection {
-  padding: 128px 0;
+  padding: 64px 0;
   background-color: #222222;
+}
+@media only screen and (min-width: 768px) {
+  .servicesSection {
+    padding: 128px 0;
+  }
 }
 .sectionTitle {
   font-family: var(--font-montserrat);

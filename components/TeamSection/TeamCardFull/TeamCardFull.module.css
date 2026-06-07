@@ -16,6 +16,125 @@
   aspect-ratio: 1 / 1;
   border-radius: 12px 12px 0 0;
 }
+.listItem {
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* Hover overlay setup */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(20, 20, 20, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlayContent {
+  text-align: center;
+  transform: translateY(15px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .overlayContent {
+  transform: translateY(0);
+}
+
+.overlayLabel {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  color: var(--destructive, #e56969);
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.overlayText {
+  font-family: var(--font-open-sans);
+  font-size: 16px;
+  color: #e0e0e0;
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  flex-grow: 1;
+}
+
+.title {
+  font-family: var(--font-montserrat);
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.position {
+  font-family: var(--font-open-sans);
+  font-size: 16px;
+  color: #a7a7a7;
+  margin: 0;
+  text-align: center;
+}
+
+.socialMedia {
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 16px;
+  color: #e56969;
+  font-family: var(--font-open-sans);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.socialMedia:hover {
+  color: #ff8585;
+}
 
 .image {
   object-fit: cover;

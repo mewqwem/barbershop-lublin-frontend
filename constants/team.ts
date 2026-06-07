@@ -19,7 +19,7 @@ export const teamMembers: Team[] = [
     specialty: "Moderne style, beard design, tattoo integration",
     socialMedia: "pawel_legit",
     img: {
-      src: "/avatar.jpg",
+      src: "/teammate1.jpg",
       alt: "",
     },
   },
@@ -30,7 +30,7 @@ export const teamMembers: Team[] = [
     specialty: "Textured cuts, modern quiff, pompadour",
     socialMedia: "adam_legit",
     img: {
-      src: "/avatar.jpg",
+      src: "/teammate2.jpeg",
       alt: "",
     },
   },
@@ -41,7 +41,7 @@ export const teamMembers: Team[] = [
     specialty: "Trendy styles, undercuts, skin fades",
     socialMedia: "tomasz_legit",
     img: {
-      src: "/avatar.jpg",
+      src: "/teammate3.jpg",
       alt: "",
     },
   },

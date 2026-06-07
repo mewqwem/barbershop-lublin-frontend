@@ -1,85 +1,155 @@
+/* Full-width container with Google Maps light background */
 .section {
   background-color: #2a2a2a;
   padding: 128px 0;
 }
 
-.title {
-  font-family: var(--font-montserrat), sans-serif;
-  font-size: 26px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
+/* Force linear CSS transition for smooth continuous flow */
+.swiperWrapper {
+  transition-timing-function: linear !important;
 }
 
-.swiper {
-  padding-bottom: 40px !important;
-  --swiper-pagination-color: #e5e5e5;
-  --swiper-pagination-bullet-inactive-color: #666666;
+/* Default slide width for desktop */
+.slide {
+  width: 380px;
+  height: auto;
 }
 
+/* Responsive slide width for mobile screens */
+@media (max-width: 576px) {
+  .slide {
+    width: 290px;
+  }
+}
+
+/* Review card inspired by Google Maps place review design */
 .card {
-  background-color: #141414; /* Dark silver card base */
-  border: 1px solid rgba(192, 192, 192, 0.1);
-  border-radius: 12px;
-  padding: 24px;
-  height: 100%;
+  background: #00000065;
+  border-radius: 16px; /* Google's signature rounded corners */
+  padding: 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
+  /* Soft ambient shadow used in Google Maps cards */
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    0 0 2px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e0e0e0;
 }
 
-.header {
+@media (max-width: 576px) {
+  .card {
+    padding: 16px;
+    gap: 8px;
+  }
+}
+
+/* User profile layout matching Google Local Guides view */
+.profile {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.avatarWrapper {
-  position: relative;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #222;
-}
-
+/* Placeholder for Google user avatar circle */
 .avatar {
-  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e8f0fe;
+  color: #1a73e8; /* Google corporate blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
 }
 
-.author {
-  font-size: 15px;
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name {
+  font-size: 14px;
   font-weight: 500;
-  color: #ffffff;
-  margin: 0;
+  color: #ffffff; /* Google's primary text color */
+
+  margin-right: 8px;
 }
 
-.time {
+.subMeta {
   font-size: 12px;
-  color: #666666;
+  color: #ffffff; /* Google's secondary text color */
 }
 
-.rating {
-  color: #c0c0c0; /* Silver colored stars instead of yellow */
-  font-size: 14px;
-  letter-spacing: 2px;
+/* Google-styled gold stars rating */
+.starsContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
+.stars {
+  color: #fbbc04; /* Official Google Maps star yellow */
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.date {
+  font-size: 12px;
+  color: #d0d0d0;
+}
+
+/* Header with avatar and name */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+/* Container for name and date */
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+/* Avatar initial (default) */
+.avatarInitial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+/* Avatar image */
+.avatarImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Review text message */
 .text {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #a3a3a3;
   margin: 0;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #ffffff; /* Google body text color */
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Clamps long reviews automatically */
+  -webkit-line-clamp: 3; /* Limits long text to 3 lines on mobile for cleaner look */
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.loader {
-  text-align: center;
-  color: #666666;
-  padding: 40px;
 }

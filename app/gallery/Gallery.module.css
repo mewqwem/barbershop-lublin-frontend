@@ -1,6 +1,11 @@
 .gallerySection {
-  padding: 128px 0;
+  padding: 64px 0;
   background-color: #222222;
+}
+@media only screen and (min-width: 768px) {
+  .gallerySection {
+    padding: 128px 0;
+  }
 }
 .sectionDescription {
   font-family: var(--font-open-sans);

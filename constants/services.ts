@@ -1,64 +1,101 @@
-import { Service } from "@/types/services";
+export const POPULAR_OFFERS = [
+  {
+    id: "pop1",
+    title: "Combo (Hair + Beard)",
+    description: "Full service precision cut with expert beard sculpting.",
+    duration: "1G 30MIN",
+    price: "150,00 zł",
+    isMostChosen: true,
+  },
+  {
+    id: "pop2",
+    title: "Haircut",
+    description: "Standard industrial grade hair architectural maintenance.",
+    duration: "1G",
+    price: "100,00 zł",
+    isMostChosen: false,
+  },
+  {
+    id: "pop3",
+    title: "Beard Trim",
+    description: "Precise beard line definition and length adjustment.",
+    duration: "45MIN",
+    price: "80,00 zł",
+    isMostChosen: false,
+  },
+];
 
-export const services: Service[] = [
+export const SERVICE_CATEGORIES = [
   {
-    name: "Strzyżenie męskie",
-    price: "80 zł",
-    duration: "45 min",
-    description: "Profesjonalne strzyżenie z myciem i stylizacją",
-    image: {
-      src: "/johnnyDepp1.jpg",
-      alt: "Profesjonalne strzyżenie z myciem i stylizacją",
-    },
+    id: "top-barber",
+    title: "TOP BARBER",
+    subtitle: "10 Professional Services",
+    services: [
+      { name: "Strzyżenie włosów", price: "100,00 zł", duration: "1g" },
+      {
+        name: "Strzyżenie długich włosów",
+        price: "120,00 zł",
+        duration: "1g 20min",
+      },
+      {
+        name: "Buzz cut (strzyżenie maszynką)",
+        price: "90,00 zł",
+        duration: "1g",
+      },
+      { name: "Strzyżenie brody", price: "80,00 zł", duration: "45min" },
+      { name: "Combo (włosy+broda)", price: "150,00 zł", duration: "1g 30min" },
+      {
+        name: "Combo + Golenie królewskie",
+        price: "160,00 zł",
+        duration: "1g 40min",
+      },
+      { name: "Królewskie golenie", price: "80,00 zł", duration: "40min" },
+      { name: "Farbowanie brody", price: "70,00 zł", duration: "30min" },
+      { name: "Golenie głowy", price: "80,00 zł", duration: "40min" },
+      { name: "Depilacja woskiem", price: "20,00 zł", duration: "5min" },
+    ],
   },
   {
-    name: "Strzyżenie + broda",
-    price: "120 zł",
-    duration: "60 min",
-    description: "Kompletna pielęgnacja - strzyżenie włosów i brody",
-    image: {
-      src: "/chrisHemsworth.jpg",
-      alt: "",
-    },
+    id: "senior-barber",
+    title: "SENIOR BARBER",
+    subtitle: "8 Essential Services",
+    services: [
+      { name: "Strzyżenie włosów", price: "80,00 zł", duration: "1g" },
+      {
+        name: "Strzyżenie długich włosów",
+        price: "100,00 zł",
+        duration: "1g 20min",
+      },
+      {
+        name: "Buzz cut (strzyżenie maszynką)",
+        price: "70,00 zł",
+        duration: "1g",
+      },
+      { name: "Strzyżenie brody", price: "60,00 zł", duration: "45min" },
+      { name: "Combo (włosy+broda)", price: "130,00 zł", duration: "1g 30min" },
+      {
+        name: "Combo (Buzz Cut+Broda)",
+        price: "120,00 zł",
+        duration: "1g 30min",
+      },
+      { name: "Farbowanie brody", price: "60,00 zł", duration: "35min" },
+      { name: "Depilacja woskiem", price: "20,00 zł", duration: "5min" },
+    ],
   },
   {
-    name: "Strzyżenie brody",
-    price: "50 zł",
-    duration: "30 min",
-    description: "Precyzyjne strzyżenie i konturowanie brody",
-    image: {
-      src: "/jasonMomoa.jpg",
-      alt: "",
-    },
-  },
-  {
-    name: "Golenie tradycyjne",
-    price: "70 zł",
-    duration: "40 min",
-    description: "Klasyczne golenie brzytwą z gorącym kompresom",
-    image: {
-      src: "",
-      alt: "",
-    },
-  },
-  {
-    name: "Trymowanie",
-    price: "30 zł",
-    duration: "15 min",
-    description: "Szybka korekta fryzury i brody",
-    image: {
-      src: "",
-      alt: "",
-    },
-  },
-  {
-    name: "Stylizacja specjalna",
-    price: "od 150 zł",
-    duration: "90 min",
-    description: "Kompleksowa stylizacja na specjalne okazje",
-    image: {
-      src: "",
-      alt: "",
-    },
+    id: "barber",
+    title: "BARBER",
+    subtitle: "5 Standard Services",
+    services: [
+      { name: "Strzyżenie włosów", price: "60,00 zł", duration: "1g" },
+      {
+        name: "Strzyżenie długich włosów",
+        price: "80,00 zł",
+        duration: "1g 30min",
+      },
+      { name: "Strzyżenie brody", price: "40,00 zł", duration: "45min" },
+      { name: "Combo (włosy+broda)", price: "90,00 zł", duration: "1g 40min" },
+      { name: "Depilacja woskiem", price: "20,00 zł", duration: "5min" },
+    ],
   },
 ];
