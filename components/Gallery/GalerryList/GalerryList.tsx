@@ -56,6 +56,7 @@ const GalerryList = () => {
                   fill
                   sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, (max-width: 1200px) 30vw, 18vw"
                   unoptimized
+                  loading="eager"
                 />
               </div>
             </div>

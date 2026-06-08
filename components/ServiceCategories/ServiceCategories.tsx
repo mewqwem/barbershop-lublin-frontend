@@ -70,7 +70,13 @@ const ServiceCategories = () => {
                     const hasOverflow = overflowElements.has(elementKey);
 
                     return (
-                      <div key={index} className={css.serviceItem}>
+                      <Link
+                        href={linkToBooksy}
+                        key={index}
+                        className={css.serviceItem}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <div className={css.serviceHeader}>
                           <div className={css.serviceTitleBlock}>
                             <h3
@@ -90,17 +96,12 @@ const ServiceCategories = () => {
                             <span className={css.servicePrice}>
                               {srv.price}
                             </span>
-                            <Link
-                              href={linkToBooksy}
-                              className={css.serviceBtn}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              UMÓW
-                            </Link>
+                            <p className={css.serviceBtn}>
+                              Kliknij dla rezerwacji
+                            </p>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     );
                   })}
                 </div>

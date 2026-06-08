@@ -33,20 +33,19 @@
 
 .accIndicatorLine {
   width: 6px;
-  height: 40px;
+  height: 48px; /* Increased to match larger title font */
   background-color: #8e9192;
 }
 
 .accTitle {
-  font-size: 24px;
+  font-size: 40px; /* Increased from 32px */
   font-weight: 600;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 4px;
 }
 
 .accSubtitle {
-  font-size: 10px;
+  font-size: 13px; /* Increased from 10px */
   font-weight: 700;
   letter-spacing: 0.2em;
   color: #8e9192;
@@ -54,7 +53,7 @@
 }
 
 .chevron {
-  font-size: 24px;
+  font-size: 32px; /* Increased from 24px */
   color: #ffffff;
   transition: transform 0.3s ease;
   display: flex;
@@ -99,8 +98,15 @@
   gap: 12px;
   justify-content: space-between;
   align-items: flex-start;
-}
 
+  padding-bottom: 5px;
+  border-bottom: 1px solid #474747;
+
+  transition: border-color 0.2s ease;
+}
+.serviceItem:hover {
+  border-color: rgb(255, 255, 255);
+}
 .serviceHeader {
   display: flex;
   justify-content: space-between;
@@ -117,7 +123,7 @@
 }
 
 .serviceTitle {
-  font-size: 16px;
+  font-size: 20px; /* Increased from 16px */
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
@@ -130,7 +136,7 @@
 }
 
 .servicePrice {
-  font-size: 16px;
+  font-size: 20px; /* Increased from 16px */
   font-weight: 700;
   white-space: nowrap;
 }
@@ -147,7 +153,7 @@
 }
 
 .serviceDuration {
-  font-size: 10px;
+  font-size: 13px; /* Increased from 10px */
   font-weight: 700;
   letter-spacing: 0.15em;
   color: #8e9192;
@@ -155,20 +161,16 @@
 }
 
 .serviceBtn {
-  background-color: #e2e2e2;
-  color: #1a1c1c;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  padding: 6px 16px;
-  border-radius: 2px;
+  color: #515151;
+  font-size: 16px; /* Increased from 14px */
   transition: all 0.2s ease;
-  text-decoration: none;
   display: inline-block;
+
+  white-space: nowrap;
 }
 
-.serviceBtn:hover {
-  background-color: #ffffff;
+.serviceItem:hover .serviceBtn {
+  color: #ffffff;
 }
 
 /* Marquee animation for mobile */
@@ -203,19 +205,19 @@
 
   .accIndicatorLine {
     width: 4px;
-    height: 24px;
+    height: 32px; /* Increased to match mobile title font */
   }
 
   .accTitle {
-    font-size: 16px;
+    font-size: 22px; /* Increased from 16px */
   }
 
   .accSubtitle {
-    font-size: 8px;
+    font-size: 11px; /* Increased from 8px */
   }
 
   .chevron {
-    font-size: 16px;
+    font-size: 22px; /* Increased from 16px */
   }
 
   .servicesGrid {
@@ -231,12 +233,12 @@
 
   .serviceHeader {
     gap: 4px;
-    min-height: 20px;
+    min-height: 24px;
     flex: 1;
   }
 
   .serviceTitle {
-    font-size: 12px;
+    font-size: 15px; /* Increased from 12px */
     flex: 0 1 auto;
     min-width: 0;
   }
@@ -251,7 +253,7 @@
   }
 
   .servicePrice {
-    font-size: 12px;
+    font-size: 15px; /* Increased from 12px */
     flex-shrink: 0;
   }
 
@@ -268,13 +270,13 @@
   }
 
   .serviceDuration {
-    font-size: 8px;
+    font-size: 11px; /* Increased from 8px */
     flex-shrink: 0;
   }
 
   .serviceBtn {
-    font-size: 8px;
-    padding: 3px 8px;
+    font-size: 11px; /* Increased from 8px */
+    padding: 4px 10px;
     flex-shrink: 0;
   }
 }
