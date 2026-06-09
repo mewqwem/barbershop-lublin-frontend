@@ -2,13 +2,14 @@
 
 import css from "./ScrollButton.module.css";
 
+export const handleScroll = () => {
+  window.scrollTo({
+    top: window.innerHeight,
+    behavior: "smooth",
+  });
+};
+
 function ScrollButton() {
-  const handleScroll = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
   return (
     <button
       className={css.scrollBtn}

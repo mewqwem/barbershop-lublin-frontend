@@ -1,0 +1,122 @@
+/* components/SuccessStorySection/SuccessStorySection.module.css */
+.servicesSection {
+  padding: 128px 0;
+  background: radial-gradient(circle at center, #2c2424 0%, #161212 70%);
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .flexContainer {
+    flex-direction: row;
+  }
+}
+
+.imageSide {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .imageSide {
+    width: 50%;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border: 4px solid #121414;
+  filter: grayscale(100%);
+  transition: filter 0.7s;
+}
+
+.image:hover {
+  filter: grayscale(0%);
+}
+
+.backdropFrame {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #ffb4ab;
+  transform: translate(1rem, 1rem);
+  z-index: -1;
+}
+
+.contentSide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contentSide {
+    width: 50%;
+  }
+}
+
+.quoteIcon {
+  color: #ffb4ab;
+  font-size: 60px;
+}
+
+.quote {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.authorMeta {
+  padding-top: 1rem;
+}
+
+.authorName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.authorTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffb4ab;
+  letter-spacing: 0.1em;
+}
+
+.additionalInfo {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.infoHeading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #e7bdb8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.infoText {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e7bdb8;
+}

@@ -5,19 +5,12 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import css from "./MobileNav.module.css";
 import { linkToBooksy } from "@/constants/linkToBooksy";
+import { links } from "../NavLinks/NavLinks";
 
 interface MobileNavProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
-const links = [
-  { href: "/", label: "Główna" },
-  { href: "/services", label: "Usługi" },
-  { href: "/team", label: "Zespół" },
-  { href: "/gallery", label: "Galeria" },
-  { href: "/contacts", label: "Kontakt" },
-];
 
 export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
   const pathname = usePathname();
