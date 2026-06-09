@@ -3,13 +3,15 @@ import Link from "next/link";
 import css from "./Footer.module.css";
 import { linkToBooksy } from "@/constants/linkToBooksy";
 
+const mapUrl =
+  "https://www.google.com/maps?cid=12854092725395271923&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=uk&gl=PL&source=embed";
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className={css.footer}>
       <div className={css.container}>
-        {/* Brand and CTA Block */}
         <div className={css.brandBlock}>
           <h2 className={css.logo}>
             LEGIT<span>.</span>
@@ -27,33 +29,30 @@ export const Footer = () => {
           </a>
         </div>
 
-        {/* Working Hours Block */}
         <div className={css.infoBlock}>
           <h3 className={css.title}>Working Hours</h3>
           <p className={css.text}>Every Day: 09:00 - 21:00</p>
           <p className={css.subtext}>No days off</p>
         </div>
 
-        {/* Contacts and Location Block */}
         <div className={css.infoBlock}>
           <h3 className={css.title}>Contacts</h3>
           <a
-            href="https://maps.google.com"
+            href={mapUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={css.link}
           >
             Nałęczowska 16A/U5, 20-701 Lublin
           </a>
-          <a href="tel:+48784563710" className={css.link}>
-            +48 784 563 710
+          <a href="tel:+48123456789" className={css.link}>
+            +48 123 456 789
           </a>
           <a href="mailto:info@legitbarber.com" className={css.link}>
             info@legitbarber.com
           </a>
         </div>
 
-        {/* Navigation and Socials Block */}
         <div className={css.infoBlock}>
           <h3 className={css.title}>Follow Us</h3>
           <div className={css.socials}>
@@ -74,12 +73,12 @@ export const Footer = () => {
               TikTok
             </a>
             <a
-              href="https://facebook.com"
+              href={linkToBooksy}
               target="_blank"
               rel="noopener noreferrer"
               className={css.link}
             >
-              Facebook
+              Booksy
             </a>
           </div>
         </div>

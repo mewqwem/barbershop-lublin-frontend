@@ -3,12 +3,10 @@ import React from "react";
 import Link from "next/link";
 import css from "./LocationSection.module.css";
 
-export const LocationSection = () => {
-  // Replace this placeholder URL with your actual Google Maps embed src link
-  const mapsEmbedUrl =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.396247922014!2d22.51423277760257!3d51.24861322957417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225925a3f270a3%3A0xb262e93ad71e30f3!2sLegit%20Barbershop%20%7C%20Fryzjer%20M%C4%99ski!5e0!3m2!1suk!2spl!4v1780337770512!5m2!1suk!2spl";
+export const mapsEmbedUrl =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.396247922014!2d22.51423277760257!3d51.24861322957417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225925a3f270a3%3A0xb262e93ad71e30f3!2sLegit%20Barbershop%20%7C%20Fryzjer%20M%C4%99ski!5e0!3m2!1suk!2spl!4v1780337770512!5m2!1suk!2spl";
 
-  // <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.396247922014!2d22.51423277760257!3d51.24861322957417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225925a3f270a3%3A0xb262e93ad71e30f3!2sLegit%20Barbershop%20%7C%20Fryzjer%20M%C4%99ski!5e0!3m2!1suk!2spl!4v1780337770512!5m2!1suk!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+export const LocationSection = () => {
   return (
     <section className={css.section}>
       <div className={css.container}>
