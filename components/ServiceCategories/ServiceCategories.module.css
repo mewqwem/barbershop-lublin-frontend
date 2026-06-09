@@ -1,12 +1,15 @@
 /* ServiceCard.module.css */
+
 .categoryGroup {
   border-bottom: 1px solid #444748;
 }
 
 .servicesSection {
   padding: 64px 0;
+
   background: radial-gradient(circle at center, #2c2c2c 0%, #222222 70%);
 }
+
 @media only screen and (min-width: 768px) {
   .servicesSection {
     padding: 128px 0;
@@ -15,53 +18,78 @@
 
 .accordionHead {
   width: 100%;
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   padding: 40px 0;
+
   text-align: left;
+
   background: none;
+
   border: none;
+
   cursor: pointer;
 }
 
 .headLeft {
   display: flex;
+
   align-items: center;
+
   gap: 24px;
 }
 
 .accIndicatorLine {
   width: 6px;
-  height: 48px; /* Increased to match larger title font */
+
+  height: 40px;
+
   background-color: #8e9192;
 }
 
 .accTitle {
-  font-size: 40px; /* Increased from 32px */
+  font-size: 32px;
+
   font-weight: 600;
+
   text-transform: uppercase;
+
   margin-bottom: 4px;
 }
 
 .accSubtitle {
-  font-size: 13px; /* Increased from 10px */
+  font-size: 10px;
+
   font-weight: 700;
+
   letter-spacing: 0.2em;
+
   color: #8e9192;
+
   text-transform: uppercase;
 }
 
 .chevron {
-  font-size: 32px; /* Increased from 24px */
+  font-size: 24px;
+
   color: #ffffff;
+
   transition: transform 0.3s ease;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 }
 
 /* Base icon behavior if you're using plain text or pseudo-element */
+
 .chevron::before {
   content: "↓";
 }
@@ -72,62 +100,89 @@
 
 .accordionContent {
   max-height: 0;
+
   overflow: hidden;
+
   transition:
     max-height 0.4s ease-out,
     opacity 0.3s ease-out;
+
   opacity: 0;
 }
 
 .accordionContentActive {
   max-height: 2000px;
+
   opacity: 1;
 }
 
 .servicesGrid {
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   column-gap: 64px;
+
   row-gap: 48px;
+
   padding-bottom: 64px;
 }
 
 .serviceItem {
   display: flex;
+
   flex-direction: row;
+
   gap: 12px;
+
   justify-content: space-between;
+
   align-items: flex-start;
 
   padding-bottom: 5px;
+
   border-bottom: 1px solid #474747;
 
   transition: border-color 0.2s ease;
 }
+
 .serviceItem:hover {
   border-color: rgb(255, 255, 255);
 }
+
 .serviceHeader {
   display: flex;
+
   justify-content: space-between;
+
   align-items: flex-start;
+
   gap: 12px;
+
   width: 100%;
 }
 
 .serviceTitleBlock {
   display: flex;
+
   flex-direction: column;
+
   gap: 4px;
+
   min-width: 0;
 }
 
 .serviceTitle {
-  font-size: 20px; /* Increased from 16px */
+  font-size: 16px;
+
   font-weight: 700;
+
   text-transform: uppercase;
+
   white-space: nowrap;
+
   flex: 0 1 auto;
+
   min-width: 0;
 }
 
@@ -136,8 +191,10 @@
 }
 
 .servicePrice {
-  font-size: 20px; /* Increased from 16px */
+  font-size: 16px;
+
   font-weight: 700;
+
   white-space: nowrap;
 }
 
@@ -147,26 +204,36 @@
 
 .servicePriceBtn {
   display: flex;
+
   flex-direction: column;
+
   align-items: flex-end;
+
   gap: 4px;
+
+  flex-shrink: 0;
 }
 
 .serviceDuration {
-  font-size: 13px; /* Increased from 10px */
+  font-size: 10px;
+
   font-weight: 700;
+
   letter-spacing: 0.15em;
+
   color: #8e9192;
+
   white-space: nowrap;
 }
 
 .serviceBtn {
   color: #515151;
-  font-size: 16px; /* Increased from 14px */
-  transition: all 0.2s ease;
-  display: inline-block;
 
-  white-space: nowrap;
+  font-size: 12px;
+
+  transition: all 0.2s ease;
+
+  display: inline-block;
 }
 
 .serviceItem:hover .serviceBtn {
@@ -174,22 +241,27 @@
 }
 
 /* Marquee animation for mobile */
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-5%);
   }
+
   100% {
     transform: translateX(0);
   }
 }
 
 /* Responsive styles */
+
 @media (max-width: 768px) {
   .servicesGrid {
     grid-template-columns: 1fr;
+
     row-gap: 32px;
   }
 }
@@ -205,41 +277,49 @@
 
   .accIndicatorLine {
     width: 4px;
-    height: 32px; /* Increased to match mobile title font */
+
+    height: 24px;
   }
 
   .accTitle {
-    font-size: 22px; /* Increased from 16px */
+    font-size: 16px;
   }
 
   .accSubtitle {
-    font-size: 11px; /* Increased from 8px */
+    font-size: 8px;
   }
 
   .chevron {
-    font-size: 22px; /* Increased from 16px */
+    font-size: 16px;
   }
 
   .servicesGrid {
     column-gap: 12px;
+
     row-gap: 20px;
+
     padding-bottom: 32px;
   }
 
   .serviceItem {
     gap: 6px;
+
     align-items: flex-start;
   }
 
   .serviceHeader {
     gap: 4px;
-    min-height: 24px;
+
+    min-height: 20px;
+
     flex: 1;
   }
 
   .serviceTitle {
-    font-size: 15px; /* Increased from 12px */
+    font-size: 12px;
+
     flex: 0 1 auto;
+
     min-width: 0;
   }
 
@@ -249,34 +329,40 @@
 
   .serviceDotSpace {
     flex: 0 1 auto;
+
     margin: 0;
   }
 
   .servicePrice {
-    font-size: 15px; /* Increased from 12px */
+    font-size: 12px;
+
     flex-shrink: 0;
   }
 
   .serviceFooter {
     gap: 4px;
+
     flex-wrap: nowrap;
   }
 
   .servicePriceBtn {
     display: flex;
+
     flex-direction: column;
+
     align-items: flex-end;
+
     gap: 3px;
   }
 
   .serviceDuration {
-    font-size: 11px; /* Increased from 8px */
+    font-size: 8px;
+
     flex-shrink: 0;
   }
 
   .serviceBtn {
-    font-size: 11px; /* Increased from 8px */
-    padding: 4px 10px;
+    font-size: 8px;
     flex-shrink: 0;
   }
 }
