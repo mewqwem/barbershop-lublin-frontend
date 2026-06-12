@@ -15,7 +15,7 @@ export const Header = () => {
     <header className={css.header}>
       <div className={css.container}>
         <div className={css.logo}>
-          <Link href={"/"}>LEGIT</Link>
+          <Link href={"/"}>BARBERSHOP</Link>
         </div>
         <nav className={css.nav}>
           <NavLinks />

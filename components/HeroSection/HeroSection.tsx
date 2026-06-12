@@ -33,11 +33,11 @@ export default function HeroSection() {
         </div>
         <div className={css.textContent}>
           <h1 className={css.mainTitle}>
-            AKADEMIA <span className={css.accentText}>LEGIT</span>
+            AKADEMIA <span className={css.accentText}>BARBERSHOP</span>
           </h1>
           <p className={css.description}>
-            Zostań mistrzem rzemiosła. Profesjonalne kursy barberskie w
-            Lublinie. Dołącz do elity i zdefiniuj swój styl pod okiem ekspertów.
+            Zostań mistrzem rzemiosła. Profesjonalne kursy barberskie w Polsce.
+            Dołącz do elity i zdefiniuj swój styl pod okiem ekspertów.
           </p>
           <div className={css.buttonGroup}>
             <button

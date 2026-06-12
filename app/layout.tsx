@@ -19,9 +19,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "LEGIT Barbershop | Lublin",
+  title: "Barbershop | Poland",
   description:
-    "Najlepszy barber w Lublinie. Profesjonalne strzyżenie męskie i pielęgnacja brody.",
+    "Najlepszy barber w Polsce. Profesjonalne strzyżenie męskie i pielęgnacja brody.",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pl"
       className={`${montserrat.variable} ${openSans.variable} antialiased`}
     >
       <body>

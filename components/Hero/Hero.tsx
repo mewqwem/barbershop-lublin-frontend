@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className={css.backgroundWrapper}>
         <Image
           src="/hero-background1.jpeg"
-          alt="LEGIT Barbershop Interior"
+          alt="Barbershop Interior"
           className={css.backgroundImage}
           fill
           loading="eager"
@@ -20,7 +20,7 @@ export const Hero = () => {
       </div>
 
       <div className={css.content}>
-        <h1 className={css.title}>Profesjonalny Barber w Lublinie</h1>
+        <h1 className={css.title}>Profesjonalny Barber w Polsce</h1>
         <h2 className={css.subtitle}>Strzyżenie męskie i pielęgnacja brody</h2>
         <p className={css.description}>
           Zadbaj o swój wizerunek. Oferujemy klasyczne cięcia, precyzyjne

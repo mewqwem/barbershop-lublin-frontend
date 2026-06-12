@@ -6,7 +6,7 @@ export const teamMembers: Team[] = [
     position: "Master Barber",
     experience: "15 lat doświadczenia",
     specialty: "Klasyczne strzyżenia, fade, hot shave",
-    socialMedia: "michal_legit",
+    socialMedia: "michal",
     img: {
       src: "/avatar.jpg",
       alt: "",
@@ -17,7 +17,7 @@ export const teamMembers: Team[] = [
     position: "Senior Barber",
     experience: "10 lat doświadczenia",
     specialty: "Moderne style, beard design, tattoo integration",
-    socialMedia: "pawel_legit",
+    socialMedia: "pawel",
     img: {
       src: "/teammate1.jpg",
       alt: "",
@@ -28,7 +28,7 @@ export const teamMembers: Team[] = [
     position: "Barber",
     experience: "7 lat doświadczenia",
     specialty: "Textured cuts, modern quiff, pompadour",
-    socialMedia: "adam_legit",
+    socialMedia: "adam",
     img: {
       src: "/teammate2.jpeg",
       alt: "",
@@ -39,7 +39,7 @@ export const teamMembers: Team[] = [
     position: "Junior Barber",
     experience: "3 lata doświadczenia",
     specialty: "Trendy styles, undercuts, skin fades",
-    socialMedia: "tomasz_legit",
+    socialMedia: "tomasz",
     img: {
       src: "/teammate3.jpg",
       alt: "",

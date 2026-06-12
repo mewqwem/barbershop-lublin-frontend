@@ -161,7 +161,7 @@ export default function text() {
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
           <a href="#" className={styles.logo}>
-            LEGIT.
+            BARBERSHOP.
           </a>
 
           <div className={styles.navLinks}>
@@ -374,7 +374,7 @@ export default function text() {
           <div className={styles.footerGrid}>
             <div className={styles.footerBrandCol}>
               <a href="#" className={styles.footerLogo}>
-                LEGIT.
+                BARBERSHOP.
               </a>
               <p className={styles.footerDesc}>
                 Industrial grooming infrastructure. Precision, craftsmanship,
@@ -434,7 +434,7 @@ export default function text() {
 
           <div className={styles.copyrightRow}>
             <p className={styles.copyrightText}>
-              © 2026 LEGIT BARBERSHOP. REGISTERED TRADEMARK. INDUSTRIAL
+              © 2026 BARBERSHOP BARBERSHOP. REGISTERED TRADEMARK. INDUSTRIAL
               CRAFTSMANSHIP GUARANTEED.
             </p>
             <div className={styles.legalLinks}>

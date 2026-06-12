@@ -4,7 +4,7 @@ import Link from "next/link";
 import css from "./LocationSection.module.css";
 
 export const mapsEmbedUrl =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.396247922014!2d22.51423277760257!3d51.24861322957417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225925a3f270a3%3A0xb262e93ad71e30f3!2sLegit%20Barbershop%20%7C%20Fryzjer%20M%C4%99ski!5e0!3m2!1suk!2spl!4v1780337770512!5m2!1suk!2spl";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1404.8284392200917!2d21.00804937135612!3d52.229891343110666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd0029661f53%3A0x25f25e465e1b9af9!2sWierz%20w%20siebie!5e1!3m2!1suk!2spl!4v1781273874478!5m2!1suk!2spl";
 
 export const LocationSection = () => {
   return (
@@ -14,7 +14,7 @@ export const LocationSection = () => {
           <span className={css.subtitle}>Odwiedź nas</span>
           <h2 className={css.title}>Gdzie jesteśmy?</h2>
 
-          <p className={css.address}>Nałęczowska 16A/U5, Lublin</p>
+          <p className={css.address}>pl. Defilad, 00-901 Warszawa</p>
 
           <div className={css.guideBox}>
             <p className={css.guideText}>

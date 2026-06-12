@@ -24,8 +24,8 @@ const ContactsPage = () => {
             </div>
             <div className={css.infoRow}>
               <span className={css.label}>E-mail:</span>
-              <a href="mailto:info@legitbarber.pl" className={css.valueLink}>
-                info@legitbarber.pl
+              <a href="mailto:info@barber.pl" className={css.valueLink}>
+                info@barber.pl
               </a>
             </div>
             <div className={css.infoRow}>
@@ -56,7 +56,7 @@ const ContactsPage = () => {
             <h3 className={css.cardTitle}>Adres i Godziny</h3>
             <div className={css.infoRow}>
               <span className={css.label}>Lokalizacja:</span>
-              <span className={css.value}>Nałęczowska 16A/U5, Lublin</span>
+              <span className={css.value}>pl. Defilad, 00-901 Warszawa</span>
             </div>
             <div className={css.infoRow}>
               <span className={css.label}>Godziny otwarcia:</span>
@@ -71,7 +71,7 @@ const ContactsPage = () => {
             <h3 className={css.cardTitle}>Dane rejestrowe firmy</h3>
             <div className={css.infoRow}>
               <span className={css.label}>Nazwa firmy:</span>
-              <span className={css.value}>LEGIT Barbershop Sp. z o.o.</span>
+              <span className={css.value}>Barbershop Sp. z o.o.</span>
             </div>
             <div className={css.infoRow}>
               <span className={css.label}>NIP:</span>

@@ -86,7 +86,7 @@ const REVIEWS_DATA: Review[] = [
     id: 6,
     name: "Wiktoria Szeliga",
     rating: 5,
-    text: "Bardzo polecam to miejsce każdemu, kto oczekuje wysokich standardów ❤️ Fryzjerzy są starannie dobrani, przeszkoleni i mają duże doświadczenie, najlepsi! Miejsce jest czyste i estetycznie przyjemne. Atmosfera jest tak miła, że chce się zostać! To nowe miejsce na mapie Lublina niedługo będzie NA PIERWSZYM MIEJSCU ✨",
+    text: "Bardzo polecam to miejsce każdemu, kto oczekuje wysokich standardów ❤️ Fryzjerzy są starannie dobrani, przeszkoleni i mają duże doświadczenie, najlepsi! Miejsce jest czyste i estetycznie przyjemne. Atmosfera jest tak miła, że chce się zostać! To nowe miejsce na mapie Warszawy niedługo będzie NA PIERWSZYM MIEJSCU ✨",
     date: "7 months ago",
   },
 ];

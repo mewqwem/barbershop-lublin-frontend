@@ -23,13 +23,11 @@ export default function ContactSection() {
               </div>
               <div className={css.contactItem}>
                 <LuMail className={`${css.icon}`} />
-                <p className={css.itemText}>akademia@legit.pl</p>
+                <p className={css.itemText}>akademia@barbershop.pl</p>
               </div>
               <div className={css.contactItem}>
                 <LuLocate className={`${css.icon}`} />
-                <p className={css.itemText}>
-                  Nałęczowska 16A/U5, 20-701 Lublin
-                </p>
+                <p className={css.itemText}>pl. Defilad, 00-901 Warszawa</p>
               </div>
             </div>
           </div>

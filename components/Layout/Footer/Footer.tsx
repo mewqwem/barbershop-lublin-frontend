@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className={css.container}>
         <div className={css.brandBlock}>
           <h2 className={css.logo}>
-            LEGIT<span>.</span>
+            BARBERSHOP<span>.</span>
           </h2>
           <p className={css.tagline}>
             More than just a haircut. It`s a lifestyle.
@@ -43,13 +43,13 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className={css.link}
           >
-            Nałęczowska 16A/U5, 20-701 Lublin
+            pl. Defilad, 00-901 Warszawa
           </a>
           <a href="tel:+48123456789" className={css.link}>
             +48 123 456 789
           </a>
-          <a href="mailto:info@legitbarber.com" className={css.link}>
-            info@legitbarber.com
+          <a href="mailto:info@barber.com" className={css.link}>
+            info@barber.com
           </a>
         </div>
 
@@ -87,7 +87,7 @@ export const Footer = () => {
       {/* Bottom Copyright Bar */}
       <div className={css.bottomBar}>
         <div className={css.bottomContainer}>
-          <p>&copy; {currentYear} LEGIT Barbershop. All rights reserved.</p>
+          <p>&copy; {currentYear} Barbershop. All rights reserved.</p>
           <div className={css.legalLinks}>
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>
